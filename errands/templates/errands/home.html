@@ -1,0 +1,969 @@
+{% extends 'errands/base.html' %}
+{% load static %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Bold Errands and Delivery Drive </title>
+		<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+		<link href="{% static 'css/template.css' %}" rel="stylesheet" type="text/css">
+		<link href="{% static 'css/icomoon.css' %}" rel="stylesheet" type="text/css">
+		<link href="{% static 'modules/slick/slick.css' %}" rel="stylesheet" type="text/css">
+		<link href="{% static 'modules/slick/slick-theme.css' %}" rel="stylesheet" type="text/css">
+		<link href="{% static 'modules/Magnific-Popup/magnific-popup.css' %}" rel="stylesheet" type="text/css">
+		<link href="{% static 'modules/vertical-timeline/css/style.css' %}" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7COpen+Sans:100,300,400,700" rel="stylesheet">
+		<link href="{% static 'modules/revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css' %}" rel="stylesheet" type="text/css" >
+		<link href="{% static 'modules/revolution/fonts/font-awesome/css/font-awesome.css' %}" rel="stylesheet" type="text/css" >
+		<link href="{% static 'modules/revolution/css/settings.css' %}" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+
+
+	<!-- Page preloader start -->
+	<div id="cg__page-loading" class="cg__pageLoading cg__preloaderBreath">
+		<div class="cg__pageLoading-inner">
+			<img src="{% static 'images/loader.gif' %}" alt="">
+		</div>
+	</div><!--/.sh__page-loading-->
+	<!-- Page preloader end -->
+
+	<div id="page_wrapper">
+
+		<!-- Responsive menu start -->
+		<ul class="cg__resMenu">
+			<li class="cg__resMenu-back">
+				<span class="cg__resMenu-backIcon glyphicon glyphicon-chevron-left"></span><a href="#" class="cg__resMenu-backLink">Back</a>
+			</li>
+			<li><a class="active" href="{% url 'home' %}"><span>Home</span></a></li>
+			<li><a href="{% url 'about' %}"><span>ABOUT US</span></a></li>
+			<li><a href="{% url 'service' %}"><span>SERVICES</span></a></li>
+			<li><a href="{% url 'contact' %}"><span>Contact</span></a></li>
+		</ul>
+
+		<!-- Restponsive menu end -->
+
+		<!-- Header start -->
+		<header>
+			<div class="cg__headerNavbar">
+				<div class="container cg__headerContainer">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="cg__logoContainer">
+								<a href="{% url 'home' %}">
+									<img src="{% static 'images/bold errands logo.png' %}" alt="" class="cg__logoImg">
+								</a>
+							</div>
+							<div class="cg__separator visible-xs"></div>
+							<div class="cg__menuBar">
+								<div class="cg__menuWrapper">
+									<div class="cg__mainMenu-trigger">
+										<a href="#" class="cg__menuBurger">
+											<span></span>
+											<span></span>
+											<span></span>
+										</a>
+									</div><!--/.cg__mainMenu-trigger-->
+									<ul class="cg__mainMenu clearfix">
+										<li><a class="active" href="{% url 'home' %}"><span>Home</span></a></li>
+												<li><a href="{% url 'about' %}"><span>ABOUT US</span></a></li>
+												<li><a href="{% url 'service' %}"><span>SERVICES</span></a></li>
+										<li><a href="{% url 'contact' %}"><span>Contact</span></a></li>
+									</ul><!--/.cg__mainMenu-->
+								</div><!--/.cg__menuWrapper-->
+							</div><!--/.cg__menuBar-->
+						</div><!--/.col-xs-12-->
+
+					</div><!--/.row-->
+				</div><!--/.cg__headerContainer-->
+			</div><!--/.cg__headerNavbar-->
+		</header>
+		<!-- Header end -->
+
+		<!-- Slider start -->
+		<div id="cg__homepageSlider-wrapper" class="cg__homepageSlider-wrapper fullwidthbanner-container" data-alias="cargo-slider" data-source="gallery">
+		<!-- START REVOLUTION SLIDER 5.4.5.1 fullwidth mode -->
+			<div id="cg__homepageSlider" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.5.1">
+				<ul>	<!-- SLIDE  -->
+					<li data-index="rs-1" data-transition="parallaxtobottom" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="assets/kallyas_placeholder-100x50.png"  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+						<!-- MAIN IMAGE -->
+						<img src="{% static 'images/hands.jpg' %}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+						<!-- LAYERS -->
+                           <marquee behavior="scroll" direction="left" style="display: flex; padding-top: 10%; margin-bottom: 10%; color: #fff; font-size: 25px;">A 21st century company with a difference . With Bold Errands And Delivery Drive,Is our client First. Enjoy the best of all our services. </marquee>
+						<!-- LAYER NR. 1 -->
+						<div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme"
+							id="slide-1-layer-1"
+							data-x="center" data-hoffset="1"
+							data-y="center" data-voffset=""
+							data-width="['full','full','full','full']"
+							data-height="['full','full','full','full']"
+
+							data-type="shape"
+							data-basealign="slide"
+							data-responsive_offset="on"
+
+							data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+							style="z-index: 5;font-family:Open Sans;background-color:rgba(25,25,27,0.50);"> </div>
+
+						<!-- LAYER NR. 2 -->
+						<div class="tp-caption   tp-resizeme"
+							id="slide-1-layer-2"
+							data-x="596"
+							data-y="385"
+							data-width="['auto']"
+							data-height="['auto']"
+
+							data-type="text"
+							data-responsive_offset="on"
+
+							data-frames='[{"delay":0,"speed":300,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"nothing"}]'
+
+							style="z-index: 6; white-space: nowrap;font-size: 45px; line-height: 60px; font-weight: 200; color: rgba(255,255,255,1);font-family:Open Sans;">Bold ErrandS and Delivery Drive </div>
+
+						<!-- LAYER NR. 3 -->
+						<div class="tp-caption   tp-resizeme"
+							id="slide-1-layer-3"
+							data-x="808"
+							data-y="472"
+							data-width="['auto']"
+							data-height="['auto']"
+
+							data-type="text"
+							data-responsive_offset="on"
+
+							data-frames='[{"delay":0,"speed":300,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"nothing"}]'
+
+							style="z-index: 7; white-space: nowrap; font-size: 16px; line-height: 22px; font-weight: 700; color: rgba(255,255,255,1);font-family:Montserrat;">YOU FIRST, WE PROMISE AND DELIVER.</div>
+
+						<!-- LAYER NR. 4 -->
+						<div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme"
+							id="slide-1-layer-5"
+							data-x="right" data-hoffset="46"
+							data-y="450"
+							data-width="['74']"
+							data-height="['122']"
+
+							data-type="shape"
+							data-responsive_offset="on"
+
+							data-frames='[{"delay":0,"speed":300,"frame":"0","from":"x:50px;opacity:0;","to":"o:1;skX:-45px;","ease":"Power2.easeInOut"},{"delay":"wait","speed":1000,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+
+							style="z-index: 8;font-family:Open Sans;background-color:rgba(10,65,119,1);"> </div>
+
+						<!-- LAYER NR. 5 -->
+						<a class="tp-caption tp-resizeme"
+							href="#" target="_self"
+							id="slide-1-layer-6"
+							data-x="1191"
+							data-y="497"
+							data-width="['30']"
+							data-height="['auto']"
+							data-actions=''
+							data-responsive_offset="on"
+
+							data-frames='[{"delay":0,"speed":300,"frame":"0","from":"x:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255,255,255,1);"}]'
+
+							style="z-index: 9; min-width: 30px; max-width: 30px; color: rgba(255,255,255,0.20);font-family:Open Sans;text-decoration: none;">
+
+							<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"><path d="M15 9l-2.12 2.12L19.76 18l-6.88 6.88L15 27l9-9z" style="fill: rgba(255, 255, 255, 0.2);"/></svg>
+
+
+						</a>
+					</li>
+					<!-- SLIDE  -->
+					<li data-index="rs-2" data-transition="parallaxtobottom" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="assets/kallyas_placeholder-100x50.png"  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+						<!-- MAIN IMAGE -->
+						<img src="{% static 'images/hands.jpg' %}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+						<!-- LAYERS -->
+
+						<!-- LAYER NR. 6 -->
+						<div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme"
+							id="slide-2-layer-1"
+							data-x="center" data-hoffset="1"
+							data-y="center" data-voffset=""
+							data-width="['full','full','full','full']"
+							data-height="['full','full','full','full']"
+
+							data-type="shape"
+							data-basealign="slide"
+							data-responsive_offset="on"
+
+							data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+							data-textAlign="['inherit','inherit','inherit','inherit']"
+
+							style="z-index: 5;font-family:Open Sans;background-color:rgba(25,25,27,0.50);"> </div>
+
+						<!-- LAYER NR. 7 -->
+						<div class="tp-caption   tp-resizeme"
+							id="slide-2-layer-2"
+							data-x="566"
+							data-y="385"
+							data-width="['auto']"
+							data-height="['auto']"
+
+							data-type="text"
+							data-responsive_offset="on"
+
+							data-frames='[{"delay":0,"speed":300,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"nothing"}]'
+
+							style="z-index: 6; white-space: nowrap; font-size: 45px; line-height: 60px; font-weight: 200; color: rgba(255,255,255,1);font-family:Open Sans;">Bold Errands and Delivery Drive </div>
+
+						<!-- LAYER NR. 8 -->
+						<div class="tp-caption   tp-resizeme"
+							id="slide-2-layer-3"
+							data-x="903"
+							data-y="472"
+							data-width="['auto']"
+							data-height="['auto']"
+
+							data-type="text"
+							data-responsive_offset="on"
+
+							data-frames='[{"delay":0,"speed":300,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"nothing"}]'
+
+							style="z-index: 7; white-space: nowrap; font-size: 16px; line-height: 22px; font-weight: 700; color: rgba(255,255,255,1);font-family:Montserrat;">YOUR CONVENIENCE IS ASSURED.</div>
+
+						<!-- LAYER NR. 9 -->
+						<div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme"
+							id="slide-2-layer-5"
+							data-x="right" data-hoffset="46"
+							data-y="450"
+							data-width="['74']"
+							data-height="['122']"
+
+							data-type="shape"
+							data-responsive_offset="on"
+
+							data-frames='[{"delay":0,"speed":300,"frame":"0","from":"x:50px;opacity:0;","to":"o:1;skX:-45px;","ease":"Power2.easeInOut"},{"delay":"wait","speed":1000,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+
+							style="z-index: 8;font-family:Open Sans;background-color:rgba(10,65,119,1);"> </div>
+
+						<!-- LAYER NR. 10 -->
+						<a class="tp-caption   tp-resizeme"
+							href="#" target="_self"
+							id="slide-2-layer-6"
+							data-x="1191"
+							data-y="497"
+							data-width="['30']"
+							data-height="['auto']"
+							data-responsive_offset="on"
+							data-frames='[{"delay":0,"speed":300,"frame":"0","from":"x:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255,255,255,1);"}]'
+
+							style="z-index: 9; min-width: 30px; max-width: 30px; color: rgba(255,255,255,0.20);font-family:Open Sans;text-decoration: none;">
+							<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"><path d="M15 9l-2.12 2.12L19.76 18l-6.88 6.88L15 27l9-9z" style="fill: rgba(255, 255, 255, 0.2);"/></svg>
+						</a>
+					</li>
+				</ul>
+				<div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+			</div>
+		</div><!-- END REVOLUTION SLIDER -->
+		<!-- Slider end -->
+
+		<!-- Action box start -->
+		<div class="cg__actionBox cg__actionBox--style1">
+			<div class="container cg__container">
+				<div class="row">
+					<div class="col-md-12 col-sm-12 cg__actionBox--top">
+						<div class="cg__actionBox-elem clearfix">
+							<div class="cg__actionBox-inner">
+								<div class="row">
+									<div class="col-md-3 col-sm-3 cg__paddingTB--15">
+										<div class="cg__iconBox cg__iconBox--style1">
+											<div class="cg__iconBox-inner cg__text--left">
+												<div class="cg__iconbox-iconWrapper cg__iconbox-iconLeft">
+													<span class="cg__iconbox-icon cg__icon-clock"></span>
+												</div><!--/.cg__iconbox-iconWrapper-->
+												<div class="cg__iconbox-contentWrapper">
+													<div class="cg__iconbox-titleWrapper">
+														<h3 class="cg__iconbox-title">OPENING HOURS</h3>
+													</div><!--/.cg__iconbox-titleWrapper-->
+													<div class="cg__iconbox-descWrapper">
+														<p class="cg__iconbox-desc">
+															Monday - Friday 08:00 AM - 5:00PM
+															<br>
+															Saturday  - Sunday Closed
+														</p>
+													</div><!--/.cg__iconbox-descWrapper-->
+												</div><!--/.cg__iconbox-contentWrappe-->
+											</div><!--/.cg__iconBox-inner-->
+										</div><!--/.cg__iconBox-->
+									</div><!--/.col-md-3 col-sm-3-->
+									<div class="col-md-3 col-sm-3 cg__paddingTB--15">
+										<div class="cg__iconBox cg__iconBox--style1">
+											<div class="cg__iconBox-inner cg__text--left">
+												<div class="cg__iconbox-iconWrapper cg__iconbox-iconLeft">
+													<span class="cg__iconbox-icon cg__icon-phone"></span>
+												</div><!--/.cg__iconbox-iconWrapper-->
+												<div class="cg__iconbox-contentWrapper">
+													<div class="cg__iconbox-titleWrapper">
+														<h3 class="cg__iconbox-title">CALL US ANYTIME</h3>
+													</div><!--/.cg__iconbox-titleWrapper-->
+													<div class="cg__iconbox-descWrapper">
+														<p class="cg__iconbox-desc">
+															+234-9071756552
+															<br>
+															+234-7010155508
+															<br>
+															+234-8097088170
+														</p>
+													</div><!--/.cg__iconbox-descWrapper-->
+												</div><!--/.cg__iconbox-contentWrappe-->
+											</div><!--/.cg__iconBox-inner-->
+										</div><!--/.cg__iconBox-->
+									</div><!--/.col-md-3 col-sm-3-->
+									<div class="col-md-3 col-sm-3 cg__paddingTB--15">
+										<div class="cg__iconBox cg__iconBox--style1">
+											<div class="cg__iconBox-inner cg__text--email">
+												<div class="cg__iconbox-iconWrapper cg__iconbox-iconLeft">
+													<span class="cg__iconbox-icon cg__icon-email"></span>
+												</div><!--/.cg__iconbox-iconWrapper-->
+												<div class="cg__iconbox-contentWrapper">
+													<div class="cg__iconbox-titleWrapper">
+														<h3 class="cg__iconbox-title">EMAIL US</h3>
+													</div><!--/.cg__iconbox-titleWrapper-->
+													<div class="cg__iconbox-descWrapper">
+														<p class="cg__iconbox-desc">
+															bolderrandsdeliverydrive@gmail.com
+															<br>
+															errandsanddelivery1@gmail.com
+														</p>
+													</div><!--/.cg__iconbox-descWrapper-->
+												</div><!--/.cg__iconbox-contentWrappe-->
+											</div><!--/.cg__iconBox-inner-->
+										</div><!--/.cg__iconBox-->
+									</div><!--/.col-md-3 col-sm-3-->
+									<div class="col-md-3 col-sm-3 cg__paddingT--35">
+										<a href="{% url 'contact' %}" class="cg__btn cg__newsletterBtn cg__btn-block"><span>Contact Us Now</span></a>
+									</div><!--/.col-md-3 col-sm-3-->
+								</div><!--/.row-->
+							</div><!--/.cg__actionBox-inner-->
+						</div><!--/.cg__actionBox-elem-->
+					</div><!--/.col-md-12 col-sm-12-->
+				</div><!--/.row-->
+			</div><!--/.container-->
+		</div><!--/.cg__actionBox-->
+		<!-- Action box end -->
+
+		<!-- Welcome section start -->
+		<div class="cg__welcomeSection">
+			<div class="cg__welcomeHeader">
+				<div class="container cg__container">
+					<div class="row">
+						<div class="col-md-12 col-sm-12">
+							<div class="cg__welcome-titleContainer">
+								<h4 class="cg__welcome-title">WELCOME TO</h4>
+								<h2 class="cg__welcome-subtitle">Bold Errands And Drive Delivery</h2>
+								<span class="cg__symbol">
+									<span></span>
+								</span>
+							</div><!--/.cg__welcome-titleContainer-->
+						</div><!--/.col-md-12 col-sm-12-->
+					</div><!--/.row-->
+				</div><!--/.container cg__container-->
+			</div><!--/.cg__welcomeHeader-->
+			<div class="cg__welcomeBody">
+				<div class="container cg__container">
+					<div class="row">
+						<div class="col-md-4 col-sm-4">
+							<div class="cg__media">
+								<img src="{% static 'images/log2.jpg' %}" alt="" class="cg__media-img">
+								<div class="cg__media-overlay"></div>
+								<div class="cg__media-details">
+									<div class="row">
+										<div class="col-md-12 col-sm-12">
+											<div class="cg__iconBox cg__iconBox--style1 cg__text--center cg__paddingB--40">
+												<div class="cg__iconBox-inner">
+													<div class="cg__iconbox-iconWrapper">
+														<a href="#" class="cg__iconbox-iconLink">
+															<span class="cg__iconbox-icon cg__icon-truck cg__icon--white"></span>
+														</a>
+													</div><!--/.cg__iconbox-iconWrapper-->
+													<div class="cg__iconbox-contentWrapper">
+														<div class="cg__iconbox-titleWrapper">
+															<h3 class="cg__iconbox-title">
+																<a href="#" class="cg__iconbox-titleLink">Logistics services</a>
+															</h3>
+														</div><!--/.cg__iconbox-titleWrapper-->
+													</div><!--/.cg__iconbox-contentWrappe-->
+												</div><!--/.cg__iconBox-inner-->
+											</div><!--/.cg__iconBox-->
+										</div><!--/.col-md-12 col-sm-12-->
+									</div><!--/.row-->
+								</div><!--/.cg__media-details-->
+							</div><!--/.cg__media-->
+						</div><!--/.col-md-4 col-sm-4-->
+						<div class="col-md-4 col-sm-4">
+							<div class="cg__media">
+								<img src="{% static 'images/bold5.jpg' %}" alt="" class="cg__media-img">
+								<div class="cg__media-overlay"></div>
+								<div class="cg__media-details">
+									<div class="row">
+										<div class="col-md-12 col-sm-12">
+											<div class="cg__iconBox cg__iconBox--style1 cg__text--center cg__paddingB--40">
+												<div class="cg__iconBox-inner">
+													<div class="cg__iconbox-iconWrapper">
+														<a href="#" class="cg__iconbox-iconLink">
+															<span class="cg__iconbox-icon cg__icon-truck cg__icon--white"></span>
+														</a>
+
+													</div><!--/.cg__iconbox-iconWrapper-->
+													<div class="cg__iconbox-contentWrapper">
+														<div class="cg__iconbox-titleWrapper">
+															<h3 class="cg__iconbox-title">
+																<a href="#" class="cg__iconbox-titleLink">fleet management</a>
+															</h3>
+														</div><!--/.cg__iconbox-titleWrapper-->
+													</div><!--/.cg__iconbox-contentWrappe-->
+												</div><!--/.cg__iconBox-inner-->
+											</div><!--/.cg__iconBox-->
+										</div><!--/.col-md-12 col-sm-12-->
+									</div><!--/.row-->
+								</div><!--/.cg__media-details-->
+							</div><!--/.cg__media-->
+						</div><!--/.col-md-4 col-sm-4-->
+						<div class="col-md-4 col-sm-4">
+							<div class="cg__media">
+								<img src="{% static 'images/cleaning.png' %}" alt="" class="cg__media-img">
+								<div class="cg__media-overlay"></div>
+								<div class="cg__media-details">
+									<div class="row">
+										<div class="col-md-12 col-sm-12">
+											<div class="cg__iconBox cg__iconBox--style1 cg__text--center cg__paddingB--40">
+												<div class="cg__iconBox-inner">
+													<div class="cg__iconbox-iconWrapper">
+														<a href="#" class="cg__iconbox-iconLink">
+															<span class="cg__iconbox-icon cg__icon-truck cg__icon--white"></span>
+														</a>
+													</div><!--/.cg__iconbox-iconWrapper-->
+													<div class="cg__iconbox-contentWrapper">
+														<div class="cg__iconbox-titleWrapper">
+															<h3 class="cg__iconbox-title">
+																<a href="#" class="cg__iconbox-titleLink">INDUSTRIAL CLEANING</a>
+															</h3>
+														</div><!--/.cg__iconbox-titleWrapper-->
+													</div><!--/.cg__iconbox-contentWrappe-->
+												</div><!--/.cg__iconBox-inner-->
+											</div><!--/.cg__iconBox-->
+										</div><!--/.col-md-12 col-sm-12-->
+									</div><!--/.row-->
+								</div><!--/.cg__media-details-->
+							</div><!--/.cg__media-->
+						</div><!--/.col-md-4 col-sm-4-->
+					</div><!--2 row ending-->
+
+				</div><!--/.container-->
+			</div><!--/.cg__welcomeBody-->
+		</div><!--/.cg__welcomeSection-->
+		<!-- Welcome section end -->
+						<div class="cg__welcomeBody">
+							<div class="container cg__container">
+								<div class="row" style="padding-top:10%">
+									<div class="col-md-4 col-sm-4">
+							<div class="cg__media">
+								<img src="{% static 'images/bold8.jpg' %}" alt="" class="cg__media-img">
+								<div class="cg__media-overlay"></div>
+								<div class="cg__media-details">
+									<div class="row">
+										<div class="col-md-12 col-sm-12">
+											<div class="cg__iconBox cg__iconBox--style1 cg__text--center cg__paddingB--40">
+												<div class="cg__iconBox-inner">
+													<div class="cg__iconbox-iconWrapper">
+														<a href="#" class="cg__iconbox-iconLink">
+															<span class="cg__iconbox-icon cg__icon-truck cg__icon--white"></span>
+														</a>
+													</div><!--/.cg__iconbox-iconWrapper-->
+													<div class="cg__iconbox-contentWrapper">
+														<div class="cg__iconbox-titleWrapper">
+															<h3 class="cg__iconbox-title">
+																<a href="#" class="cg__iconbox-titleLink">Driver Management</a>
+															</h3>
+														</div><!--/.cg__iconbox-titleWrapper-->
+													</div><!--/.cg__iconbox-contentWrappe-->
+												</div><!--/.cg__iconBox-inner-->
+											</div><!--/.cg__iconBox-->
+										</div><!--/.col-md-12 col-sm-12-->
+									</div><!--/.row-->
+								</div><!--/.cg__media-details-->
+							</div><!--/.cg__media-->
+						</div><!--/.col-md-4 col-sm-4-->
+
+						<div class="col-md-4 col-sm-4">
+							<div class="cg__media">
+								<img src="{% static 'images/log2.jpg' %}" alt="" class="cg__media-img">
+								<div class="cg__media-overlay"></div>
+								<div class="cg__media-details">
+									<div class="row">
+										<div class="col-md-12 col-sm-12">
+											<div class="cg__iconBox cg__iconBox--style1 cg__text--center cg__paddingB--40">
+												<div class="cg__iconBox-inner">
+													<div class="cg__iconbox-iconWrapper">
+														<a href="#" class="cg__iconbox-iconLink">
+															<span class="cg__iconbox-icon cg__icon-truck cg__icon--white"></span>
+														</a>
+													</div><!--/.cg__iconbox-iconWrapper-->
+													<div class="cg__iconbox-contentWrapper">
+														<div class="cg__iconbox-titleWrapper">
+															<h3 class="cg__iconbox-title">
+																<a href="#" class="cg__iconbox-titleLink">Vehicle Tracker Installation</a>
+															</h3>
+														</div><!--/.cg__iconbox-titleWrapper-->
+													</div><!--/.cg__iconbox-contentWrappe-->
+												</div><!--/.cg__iconBox-inner-->
+											</div><!--/.cg__iconBox-->
+										</div><!--/.col-md-12 col-sm-12-->
+									</div><!--/.row-->
+								</div><!--/.cg__media-details-->
+							</div><!--/.cg__media-->
+						</div><!--/.col-md-4 col-sm-4-->
+
+						<div class="col-md-4 col-sm-4">
+							<div class="cg__media">
+								<img src="{% static 'images/bold6.jpg' %}" alt="" class="cg__media-img">
+								<div class="cg__media-overlay"></div>
+								<div class="cg__media-details">
+									<div class="row">
+										<div class="col-md-12 col-sm-12">
+											<div class="cg__iconBox cg__iconBox--style1 cg__text--center cg__paddingB--40">
+												<div class="cg__iconBox-inner">
+													<div class="cg__iconbox-iconWrapper">
+														<a href="#" class="cg__iconbox-iconLink">
+															<span class="cg__iconbox-icon cg__icon-truck cg__icon--white"></span>
+														</a>
+													</div><!--/.cg__iconbox-iconWrapper-->
+													<div class="cg__iconbox-contentWrapper">
+														<div class="cg__iconbox-titleWrapper">
+															<h3 class="cg__iconbox-title">
+																<a href="#" class="cg__iconbox-titleLink">Cab services</a>
+															</h3>
+														</div><!--/.cg__iconbox-titleWrapper-->
+													</div><!--/.cg__iconbox-contentWrappe-->
+												</div><!--/.cg__iconBox-inner-->
+											</div><!--/.cg__iconBox-->
+										</div><!--/.col-md-12 col-sm-12-->
+									</div><!--/.row-->
+								</div><!--/.cg__media-details-->
+							</div><!--/.cg__media-->
+						</div><!--/.col-md-4 col-sm-4-->
+
+
+
+					</div><!--2 row ending-->
+
+				</div><!--/.container-->
+			</div><!--/.cg__welcomeBody-->
+		</div><!--/.cg__welcomeSection-->
+		<!-- Welcome section end -->
+
+		<!-- Global section start -->
+		<div class="cg__globalSection">
+			<div class="cg__globalSection-bg cg__bg-img"></div>
+			<div class="container cg__container cg__container-w85">
+				<div class="row">
+					<div class="col-md-3 col-sm-6 cg__global-col hasAnimation" data-animationType="fadeIn" data-animationDuration="1000ms" data-animationDelay="400ms">
+						<div class="cg__iconBox cg__iconBox--style2">
+							<div class="cg__iconBox-inner cg__text--left">
+								<div class="cg__iconbox-iconWrapper">
+									<span class="cg__iconbox-icon cg__icon-truck"></span>
+								</div><!--/.cg__iconbox-iconWrapper-->
+								<div class="cg__iconbox-contentWrapper">
+									<div class="cg__iconbox-titleWrapper">
+										<h3 class="cg__iconbox-title">LOGISTICS  SERVICES</h3>
+									</div><!--/.cg__iconbox-titleWrapper-->
+									<div class="cg__iconbox-descWrapper">
+										<p class="cg__iconbox-desc">
+									Our logistics arm is avilable for your daily door to door step delivery within and outside 
+									the country.
+										</p>
+									</div><!--/.cg__iconbox-descWrapper-->
+								</div><!--/.cg__iconbox-contentWrappe-->
+							</div><!--/.cg__iconBox-inner-->
+						</div><!--/.cg__iconBox-->
+					</div><!--/.col-md-3 col-sm-6-->
+
+					<div class="col-md-3 col-sm-6 cg__global-col hasAnimation" data-animationType="fadeIn" data-animationDuration="1000ms" data-animationDelay="400ms">
+						<div class="cg__iconBox cg__iconBox--style2">
+							<div class="cg__iconBox-inner cg__text--left">
+								<div class="cg__iconbox-iconWrapper">
+									<span class="cg__iconbox-icon cg__icon-truck"></span>
+								</div><!--/.cg__iconbox-iconWrapper-->
+								<div class="cg__iconbox-contentWrapper">
+									<div class="cg__iconbox-titleWrapper">
+										<h3 class="cg__iconbox-title">Fleet Management</h3>
+									</div><!--/.cg__iconbox-titleWrapper-->
+									<div class="cg__iconbox-descWrapper">
+										<p class="cg__iconbox-desc">
+									We organize and coordinate work vehicles with the aim to enhance efficiency, minimize costs, 
+									and provide compliance with government regulations 
+										</p>
+									</div><!--/.cg__iconbox-descWrapper-->
+								</div><!--/.cg__iconbox-contentWrappe-->
+							</div><!--/.cg__iconBox-inner-->
+						</div><!--/.cg__iconBox-->
+					</div><!--/.col-md-3 col-sm-6-->
+
+
+					<div class="col-md-3 col-sm-6 cg__global-col hasAnimation" data-animationType="fadeIn" data-animationDuration="1000ms" data-animationDelay="550ms">
+						<div class="cg__iconBox cg__iconBox--style2">
+							<div class="cg__iconBox-inner cg__text--left">
+								<div class="cg__iconbox-iconWrapper">
+									<span class="cg__iconbox-icon cg__icon-box"></span>
+								</div><!--/.cg__iconbox-iconWrapper-->
+								<div class="cg__iconbox-contentWrapper">
+									<div class="cg__iconbox-titleWrapper">
+										<h3 class="cg__iconbox-title">Vehicle Tracker</h3>
+									</div><!--/.cg__iconbox-titleWrapper-->
+									<div class="cg__iconbox-descWrapper">
+										<p class="cg__iconbox-desc">
+										We install trackers in vehicle using the most advanced technology,which is secure and easy 
+										to understand.
+										</p>
+									</div><!--/.cg__iconbox-descWrapper-->
+								</div><!--/.cg__iconbox-contentWrappe-->
+							</div><!--/.cg__iconBox-inner-->
+						</div><!--/.cg__iconBox-->
+					</div><!--/.col-md-3 col-sm-6-->
+				</div><!--/.row-->
+			</div><!--/.container-->
+		</div><!--/.cg__globalSection-->
+		<!-- Global section end -->
+	
+		<div class="cg__globalSection">
+			<div class="cg__globalSection-bg cg__bg-img"></div>
+			<div class="container cg__container cg__container-w85">
+				<div class="row" style="margin-bottom: 500px  !important;" >
+					<div class="col-md-3 col-sm-6 cg__global-col hasAnimation" data-animationType="fadeIn" data-animationDuration="1000ms" data-animationDelay="850ms">
+						<div class="cg__iconBox cg__iconBox--style2">
+							<div class="cg__iconBox-inner cg__text--left">
+								<div class="cg__iconbox-iconWrapper">
+									<span class="cg__iconbox-icon cg__icon-forklift"></span>
+								</div><!--/.cg__iconbox-iconWrapper-->
+								<div class="cg__iconbox-contentWrapper">
+									<div class="cg__iconbox-titleWrapper">
+										<h3 class="cg__iconbox-title">Industrial Cleaning</h3>
+									</div><!--/.cg__iconbox-titleWrapper-->
+									<div class="cg__iconbox-descWrapper">
+										<p class="cg__iconbox-desc">
+									USing the latest technologies and procedures, We provide professional cleaning services,
+									ranging from general cleaning,home and domestic, office cleaning, fumigation and pest control and events cleaning. 
+										</p>
+									</div><!--/.cg__iconbox-descWrapper-->
+								</div><!--/.cg__iconbox-contentWrappe-->
+							</div><!--/.cg__iconBox-inner-->
+						</div><!--/.cg__iconBox-->
+					</div><!--/.col-md-3 col-sm-6-->
+
+					<div class="col-md-3 col-sm-6 cg__global-col hasAnimation" data-animationType="fadeIn" data-animationDuration="1000ms" data-animationDelay="850ms">
+						<div class="cg__iconBox cg__iconBox--style2">
+							<div class="cg__iconBox-inner cg__text--left">
+								<div class="cg__iconbox-iconWrapper">
+									<span class="cg__iconbox-icon cg__icon-forklift"></span>
+								</div><!--/.cg__iconbox-iconWrapper-->
+								<div class="cg__iconbox-contentWrapper">
+									<div class="cg__iconbox-titleWrapper">
+										<h3 class="cg__iconbox-title">Drivers Management</h3>
+									</div><!--/.cg__iconbox-titleWrapper-->
+									<div class="cg__iconbox-descWrapper">
+										<p class="cg__iconbox-desc">
+									We help to train, educate drivers on good driving habits, mapping out the best route to help reduce costs and driver's behaviour.
+									We also recruit driver for co operative bodies and company. 
+										</p>
+									</div><!--/.cg__iconbox-descWrapper-->
+								</div><!--/.cg__iconbox-contentWrappe-->
+							</div><!--/.cg__iconBox-inner-->
+						</div><!--/.cg__iconBox-->
+					</div><!--/.col-md-3 col-sm-6-->
+					
+			
+					<div class="col-md-3 col-sm-6 cg__global-col hasAnimation" data-animationType="fadeIn" data-animationDuration="1000ms" data-animationDelay="700ms">
+						<div class="cg__iconBox cg__iconBox--style2">
+							<div class="cg__iconBox-inner cg__text--left">
+								<div class="cg__iconbox-iconWrapper">
+									<span class="cg__iconbox-icon cg__icon-ball"></span>
+								</div><!--/.cg__iconbox-iconWrapper-->
+								<div class="cg__iconbox-contentWrapper">
+									<div class="cg__iconbox-titleWrapper">
+										<h3 class="cg__iconbox-title">Cab Services</h3>
+									</div><!--/.cg__iconbox-titleWrapper-->
+									<div class="cg__iconbox-descWrapper">
+										<p class="cg__iconbox-desc">
+										We offer range of professional taxi services, We provide people with transport, Vehicle
+										rental services, hire purchase services and lots more.
+										</p>
+									</div><!--/.cg__iconbox-descWrapper-->
+								</div><!--/.cg__iconbox-contentWrappe-->
+							</div><!--/.cg__iconBox-inner-->
+						</div><!--/.cg__iconBox-->
+					</div><!--/.col-md-3 col-sm-6-->
+		</div><!--/.row-->
+						</div><!--/.container-->
+					</div><!--/.cg__globalSection-->
+					<!-- Global section end -->
+			
+					
+					
+			
+
+
+		<!-- fleet gallery section start -->
+		<div class="cg__fleetSection">
+			<div class="cg__fleetContainer">
+				<div class="row cg__gutter-0">
+					<div class="col-md-6 col-sm-12">
+						<div class="cg__fleet-Block">
+							<div class="cg__fleet-innerContent">
+								<div class="cg__fleet-titleBlock cg__text--left">
+									<h2>FLEET GALLERY</h2>
+									<p>Here are the images of some of our fleets</p>
+									<div class="cg__fleetBtn">
+										<a href="#" class="cg__btn"><span>VIEW ALL</span></a>
+									</div>
+								</div><!--/.cg__fleet-titleBlock-->
+							</div><!--/.cg__fleet-innerContent-->
+						</div><!--/.cg__fleet-Block-->
+					</div><!--/.col-md-6 col-sm-12-->
+					<div class="col-md-6 col-sm-12">
+						<div class="cg__fleetGallery-container">
+							<div class="cg__gridGallery cg__gridSlider">
+								<div class="cg__gridGallery-slider">
+									<div class="cg__gridGallery-item">
+										<a href="{% static 'images/bike3.jpg' %}" class="cg__gridGallery-link sh__zoom--on">
+											<span class="cg__gridImg-wrapper">
+												<img src="{% static 'images/bike3.jpg' %}" alt="" class="cg__gridGallery-img" style="height: 280px;">
+											</span>
+											<i class="cg__icon glyphicon glyphicon-search cg__circled-icon"></i>
+										</a><!--/.cg__gridGallery-link-->
+									</div><!--/.cg__gridGallery-item-->
+									<div class="cg__gridGallery-item">
+										<a href="{% static 'images/car.jpg' %}" class="cg__gridGallery-link sh__zoom--on">
+											<span class="cg__gridImg-wrapper">
+												<img src="{% static 'images/car.jpg' %}" alt="" class="cg__gridGallery-img" style="height: 280px;">
+											</span>
+											<i class="cg__icon glyphicon glyphicon-search cg__circled-icon"></i>
+										</a><!--/.cg__gridGallery-link-->
+									</div><!--/.cg__gridGallery-item-->
+									<div class="cg__gridGallery-item">
+										<a href="{% static 'images/bold2.jpg' %}" class="cg__gridGallery-link sh__zoom--on">
+											<span class="cg__gridImg-wrapper">
+												<img src="{% static 'images/bold2.jpg' %}" alt="" class="cg__gridGallery-img" style="height: 280px;">
+											</span>
+											<i class="cg__icon glyphicon glyphicon-search cg__circled-icon"></i>
+										</a><!--/.cg__gridGallery-link-->
+									</div><!--/.cg__gridGallery-item-->
+									<div class="cg__gridGallery-item">
+										<a href="{% static 'images/bold15.jpg' %}" class="cg__gridGallery-link sh__zoom--on">
+											<span class="cg__gridImg-wrapper">
+												<img src="{% static 'images/bold15.jpg' %}" alt="" class="cg__gridGallery-img" style="height: 280px;">
+											</span>
+											<i class="cg__icon glyphicon glyphicon-search cg__circled-icon"></i>
+										</a><!--/.cg__gridGallery-link-->
+									</div><!--/.cg__gridGallery-item-->
+									<div class="cg__gridGallery-item">
+										<a href="{% static 'images/bold16.jpg' %}" class="cg__gridGallery-link sh__zoom--on">
+											<span class="cg__gridImg-wrapper">
+												<img src="{% static 'images/bold16.jpg' %}" alt="" class="cg__gridGallery-img" style="height: 280px;">
+											</span>
+											<i class="cg__icon glyphicon glyphicon-search cg__circled-icon"></i>
+										</a><!--/.cg__gridGallery-link-->
+									</div><!--/.cg__gridGallery-item-->
+									<div class="cg__gridGallery-item">
+										<a href="{% static 'images/bold17.jpg' %}" class="cg__gridGallery-link sh__zoom--on">
+											<span class="cg__gridImg-wrapper">
+												<img src="{% static 'images/bold17.jpg' %}" alt="" class="cg__gridGallery-img" style="height: 280px;">
+											</span>
+											<i class="cg__icon glyphicon glyphicon-search cg__circled-icon"></i>
+										</a><!--/.cg__gridGallery-link-->
+									</div><!--/.-->
+								</div><!--/.cg__gridGallery-slider-->
+							</div><!--/.cg__gridGallery-->
+						</div><!--/.cg__fleetGallery-container-->
+					</div><!--/.col-md-6 col-sm-12-->
+				</div><!--/.row-->
+			</div><!--/.cg__fleetContainer-->
+		</div><!--/.cg__fleetSection-->
+		<!-- fleet gallery section end -->
+		<!-- news section start -->
+		<div class="cg__newsSection">
+			<div class="container cg__container">
+				<div class="row">
+					<div class="col-md-8 col-sm-8">
+						<div class="cg__testimonials-wrapper">
+							<div class="cg__news-titleBlock cg__paddingB--25 cg__text-left">
+								
+								<h2>TESTIMONIALS</h2>
+								<div class="cg__symbol"><span></span></div>
+							</div><!--/.cg__news-titleBlock-->
+							<div class=".cg__sidebar-wrapper">
+							
+							<div class="cg__testimonial">
+								<video >
+									<source src="{% static 'video/steve.mp4' %}" type="video/mp4">
+								</video>
+								<div class="cg__testimonial-text" style="display: flex;">
+									I gave my car to bold errands and delivery drive and the promise they gave was their watch word.
+								</div><!--/.cg__testimonial-text-->
+								<div class="cg__testimonial-info" style="display: flex;">
+									<img src="{% static 'images/client.jpg' %}" alt="" class="cg__testimonial-img">
+									<h4>Clara Seinfield</h4>
+									<div class="cg__testimonial-position">Client</div>
+									<div class="cg__testimonial-rating"></div>
+						</div><!--/.cg__testimonial-info-->
+					</div><!--/.cg__testimonial-->
+
+									<div class="cg__testimonial">
+										<div class="cg__testimonial-text">
+											I gave my car to bold errands and delivery drive and the promise they gave was their watch word.
+										</div><!--/.cg__testimonial-text-->
+										<div class="cg__testimonial-info">
+											<img src="{% static 'images/client.jpg' %}" alt="" class="cg__testimonial-img">
+											<h4>Clara Seinfield</h4>
+											<div class="cg__testimonial-position">Client</div>
+											<div class="cg__testimonial-rating"></div>
+								</div><!--/.cg__testimonial-info-->
+							</div><!--/.cg__testimonial-->
+							</span>
+									</div><!--/.cg__testimonial-rating-->
+								</div><!--/.cg__testimonial-info-->
+							</div><!--/.cg__testimonial-->
+								</div><!--/.cg__logo-item-->
+							</div><!--/.cg__Logos-->
+						</div><!--/.cg__testimonials-wrapper-->
+					</div><!--/.col-md-8 col-sm-8-->
+						</div><!--/.cg__sidebar-wrapper-->
+					</div><!--/.col-md-4 col-sm-4-->
+				</div><!--/.row-->
+			</div><!--/.cg__container-->
+		</div><!--/.cg__newsSection-->
+		<!-- news section end -->
+
+		<!-- call to action section start -->
+		<div class="cg__ctaSection">
+			<div class="container cg__container">
+				<div class="row">
+					<div class="col-md-10 col-sm-10">
+						<div class="cg__cta-titleBlock cg__text--left">
+							<h2>We're ready to satisfy you</h2>
+						</div>
+					</div><!--/.col-md-10 col-sm-10-->
+					<div class="col-md-2 col-sm-2">
+						<a href="{% url 'contact' %}" class="cg__btn cg__btn-block">Contact Us</a>
+					</div><!--/.col-md-2 col-sm-2-->
+				</div><!--/.row-->
+			</div><!--/.container-->
+		</div><!--/.cg__ctaSection-->
+		<!-- call to action section end -->
+
+		<!-- Footer start-->
+		<footer class="cg__scheme--light">
+			<div class="container cg__container">
+				<div class="row">
+					<div class="col-md-4 col-sm-4 cg__paddingR--60">
+						<div class="cg__imageBox cg__paddingB--30">
+							<div class="cg__imageBox-wrapper">
+								<div class="cg__imageBox-imgWrapper">
+									<img src="{% static 'images/bold errands logo.png' %}" width="188" height="59"alt="">
+								</div>
+							</div><!--/.cg__imageBox-wrapper-->
+						</div><!--/.cg__imageBox-->
+						<p class="cg__footer-description">Bold Errands and Delivery Drive | Direct to every direction</p>
+					</div><!--/.col-md-4 col-sm-4-->
+					<div class="col-md-2 col-sm-2">
+						<h4 class="cg__footer-title">MENU</h4>
+						<div class="cg__customMenu cg__customMenu--style1 cg__text--left">
+							<ul>
+								<li><a href="{% url 'home' %}"><span>HOME</span></a></li>
+								<li><a href="{% url 'contact' %}"><span>CONTACT</span></a></li>
+								<li><a href="{% url 'about' %}"><span>ABOUT US</span></a></li>
+								<li><a href="{% url 'service' %}"><span>SERVICES</span></a></li>
+							</ul>
+						</div><!--/.cg__customMenu-->
+					</div><!--/.col-md-2 col-sm-2-->
+					<div class="col-md-4 col-sm-4 cg__paddingL--60">
+						<h4 class="cg__footer-title cg__paddingB--20">COMPANY INFO</h4>
+						<div class="cg__iconBox cg__iconBox--style5">
+							<div class="cg__iconBox-inner clearfix cg__text--left">
+								<div class="cg__iconbox-iconWrapper cg__iconbox-iconLeft">
+									<span class="cg__iconbox-icon cg__icon-clock"></span>
+								</div><!--/.cg__iconbox-iconWrapper-->
+								<div class="cg__iconbox-contentWrapper">
+									<div class="cg__iconbox-titleWrapper">
+										<h3 class="cg__iconbox-title">Monday - Friday 08:00 AM - 5:00 PM</h3>
+									</div><!--/.cg__iconbox-titleWrapper-->
+								</div><!--/.cg__iconbox-contentWrappe-->
+							</div><!--/.cg__iconBox-inner-->
+						</div><!--/.cg__iconBox-->
+						<div class="cg__iconBox cg__iconBox--style5">
+							<div class="cg__iconBox-inner clearfix cg__text--left">
+								<div class="cg__iconbox-iconWrapper cg__iconbox-iconLeft">
+									<span class="cg__iconbox-icon cg__icon-phone"></span>
+								</div><!--/.cg__iconbox-iconWrapper-->
+								<div class="cg__iconbox-contentWrapper">
+									<div class="cg__iconbox-titleWrapper">
+										<h3 class="cg__iconbox-title">+234 - 9032144021</h3>
+									</div><!--/.cg__iconbox-titleWrapper-->
+								</div><!--/.cg__iconbox-contentWrappe-->
+							</div><!--/.cg__iconBox-inner-->
+						</div><!--/.cg__iconBox-->
+						<div class="cg__iconBox cg__iconBox--style5">
+							<div class="cg__iconBox-inner clearfix cg__text--left">
+								<div class="cg__iconbox-iconWrapper cg__iconbox-iconLeft">
+									<span class="cg__iconbox-icon cg__icon-email"></span>
+								</div><!--/.cg__iconbox-iconWrapper-->
+								<div class="cg__iconbox-contentWrapper">
+									<div class="cg__iconbox-titleWrapper">
+										<h3 class="cg__iconbox-title">bolderrandsanddelivery1@gmail.com</h3>
+									</div><!--/.cg__iconbox-titleWrapper-->
+								</div><!--/.cg__iconbox-contentWrappe-->
+							</div><!--/.cg__iconBox-inner-->
+						</div><!--/.cg__iconBox-->
+						<div class="cg__spacer--30"></div>
+						<h4 class="cg__footer-title">WE'RE SOCIAL</h4>
+						<div class="cg__socialIcons cg__text--left">
+							<ul>
+								<li><a href="{% static 'www.facebook.com/bolderrands'  %}"><span class="cg__icon-facebook2"></span></a></li>
+								<li><a href="#"><span class="cg__icon-twitter2"></span></a></li>
+								<li><a href="#"><span class="cg__icon-googleplus2"></span></a></li>
+								<li><a href="#"><span class="cg__icon-linkedin2"></span></a></li>
+							</ul>
+						</div><!--/.cg__socialIcons-->
+					</div><!--/.col-md-4 col-sm-4-->
+				</div><!--/.row-->
+			</div><!--/.container-->
+		</footer>
+		<!-- Footer end -->
+	</div><!-- /.#page_wrapper -->
+
+	<a href="#" class="totop">TOP</a> <!--/.totop -->
+
+	<script src="{% static 'js/plugins/jquery-1.11.1.min.js' %}"></script>
+	<script src="{% static 'js/plugins/bootstrap.min.js' %}"></script>
+	<script src="{% static 'modules/slick/slick.js' %}"></script>
+	<script src="{% static 'modules/Magnific-Popup/jquery.magnific-popup.js' %}"></script>
+	<script src="{% static 'js/plugins/jquery.countTo.js' %}"></script>
+	<script src="{% static 'modules/vertical-timeline/js/modernizr.js' %}"></script>
+	<script src="{% static 'modules/vertical-timeline/js/main.js' %}"></script>
+	<script src="{% static 'modules/revolution/js/jquery.themepunch.tools.min.js' %}"></script>
+	<script src="{% static 'modules/revolution/js/jquery.themepunch.revolution.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'modules/revolution/js/extensions/revolution.extension.actions.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'modules/revolution/js/extensions/revolution.extension.carousel.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'modules/revolution/js/extensions/revolution.extension.kenburn.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'modules/revolution/js/extensions/revolution.extension.layeranimation.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'modules/revolution/js/extensions/revolution.extension.migration.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'modules/revolution/js/extensions/revolution.extension.navigation.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'modules/revolution/js/extensions/revolution.extension.parallax.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'modules/revolution/js/extensions/revolution.extension.slideanims.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'modules/revolution/js/extensions/revolution.extension.video.min.js' %}"></script>
+	<script type="text/javascript">function setREVStartSize(e){
+			try{ var i=jQuery(window).width(),t=9999,r=0,n=0,l=0,f=0,s=0,h=0;
+				if(e.responsiveLevels&&(jQuery.each(e.responsiveLevels,function(e,f){f>i&&(t=r=f,l=e),i>f&&f>r&&(r=f,n=e)}),t>r&&(l=n)),f=e.gridheight[l]||e.gridheight[0]||e.gridheight,s=e.gridwidth[l]||e.gridwidth[0]||e.gridwidth,h=i/s,h=h>1?1:h,f=Math.round(h*f),"fullscreen"==e.sliderLayout){var u=(e.c.width(),jQuery(window).height());if(void 0!=e.fullScreenOffsetContainer){var c=e.fullScreenOffsetContainer.split(",");if (c) jQuery.each(c,function(e,i){u=jQuery(i).length>0?u-jQuery(i).outerHeight(!0):u}),e.fullScreenOffset.split("%").length>1&&void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0?u-=jQuery(window).height()*parseInt(e.fullScreenOffset,0)/100:void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0&&(u-=parseInt(e.fullScreenOffset,0))}f=u}else void 0!=e.minHeight&&f<e.minHeight&&(f=e.minHeight);e.c.closest(".rev_slider_wrapper").css({height:f})
+			}catch(d){console.log("Failure at Presize of Slider:"+d)}
+		};
+	</script>
+	<script src="{% static 'js/script.js' %}"></script>
+	</body>
+</html>
+
+{% endblock %}
